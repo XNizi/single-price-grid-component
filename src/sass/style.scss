@@ -1,0 +1,166 @@
+* {
+	box-sizing: border-box;
+	padding: 0;
+	margin: 0;
+}
+html {
+	font-size: 62.5%;
+}
+body {
+	min-height: 100vh;
+	font-family: 'Karla', sans-serif;
+	background-color: #e6eff5;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	padding: 72px 32px;
+}
+.card {
+	overflow: hidden;
+	display: flex;
+	flex-direction: column;
+	border-radius: 5px;
+	max-width: 635px;
+	box-shadow: 0px 15px 30px 0px rgba(0, 81, 171, 0.15);
+	// first
+	&__top {
+		background-color: #fff;
+		padding: 28px 24px 32px;
+	}
+	&__title {
+		color: #2ab3b1;
+		font-size: 2rem;
+		font-weight: 700;
+		letter-spacing: -0.25px;
+		margin-bottom: 24px;
+	}
+	&__guarantee {
+		color: #c0df33;
+		font-size: 1.5rem;
+		font-weight: 700;
+		line-height: 20px;
+		letter-spacing: -0.187px;
+		margin-bottom: 16px;
+	}
+	&__text {
+		font-size: 1.4rem;
+		letter-spacing: -0.175px;
+		line-height: 26px;
+		color: #9aa7be;
+	}
+	&__under {
+		background-color: #2ab3b1;
+		display: flex;
+		flex-direction: column;
+	}
+	// second
+	&__subscribeinfo {
+		padding: 24px;
+		display: flex;
+		flex-direction: column;
+	}
+	&__subscribetime {
+		font-size: 1.8rem;
+		color: #fff;
+		font-weight: 700;
+		letter-spacing: -0.225px;
+		margin-bottom: 18px;
+	}
+	&__subscriptionPriceBox {
+		display: flex;
+		align-items: center;
+		margin-bottom: 4px;
+	}
+	&__price {
+		color: #fff;
+		font-size: 3.2rem;
+		font-weight: 700;
+		letter-spacing: -0.4px;
+	}
+	&__permon {
+		font-size: 1.6rem;
+		color: #fff;
+		opacity: 0.5;
+		line-height: 26px;
+		letter-spacing: -0.2px;
+		margin-left: 11px;
+	}
+	&__promotext {
+		font-size: 1.6rem;
+		color: #fff;
+		line-height: 26px;
+		letter-spacing: -0.2px;
+	}
+	&__signup {
+		box-shadow: 0px 10px 10px 0px rgba(0, 0, 0, 0.1);
+		text-decoration: none;
+		border-radius: 5px;
+		background-color: #c0df33;
+		color: #fff;
+		font-size: 1.6rem;
+		font-weight: 700;
+		letter-spacing: -0.2px;
+		text-align: center;
+		padding: 14.5px 0;
+		margin-top: 26px;
+	}
+	// third
+	&__whyus {
+		background-color: rgba(255, 255, 255, 0.1519);
+		padding: 24px;
+	}
+	&__whyustitle {
+		font-size: 1.8rem;
+		color: #fff;
+		font-weight: 700;
+		letter-spacing: -0.225px;
+		margin-bottom: 18px;
+	}
+	&__whyusbox {
+		display: flex;
+		flex-direction: column;
+	}
+	&__whyusboxitem {
+		color: #fff;
+		font-size: 1.4rem;
+		line-height: 20px;
+		letter-spacing: -0.175px;
+		opacity: 0.75;
+	}
+}
+@media (min-width: 768px) {
+	.card {
+		border-radius: 8px;
+
+		&__top {
+			padding: 40px;
+		}
+		&__title {
+			font-size: 2.4rem;
+			letter-spacing: -0.3px;
+		}
+		&__guarantee {
+			font-size: 1.8rem;
+			line-height: 0px;
+			letter-spacing: -0.225px;
+			margin-bottom: 11px;
+		}
+		&__text {
+			font-size: 1.6rem;
+			letter-spacing: -0.2px;
+		}
+		&__under {
+			flex-direction: row;
+		}
+		// second
+		&__subscribeinfo {
+			width: 50%;
+			padding: 40px;
+		}
+
+		&__whyus {
+			width: 50%;
+			padding: 40px;
+		}
+	}
+}
